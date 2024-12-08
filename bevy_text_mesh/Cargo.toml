@@ -1,0 +1,19 @@
+[package]
+name = "bevy_text_mesh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14.2"
+fdsm = "0.6.0"
+owned_ttf_parser = "0.25.0"
+nalgebra = "0.33.2"
+
+image = "0.25.1"
+thiserror = "1.0.61"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
